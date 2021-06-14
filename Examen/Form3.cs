@@ -75,7 +75,11 @@ namespace Examen
 
         private void btnOrdenes_Click(object sender, EventArgs e)
         {
+            int b = dataGridViewAdmin.Rows.Add();
 
+            dataGridViewAdmin.Rows[b].Cells[0].Value = comboSucursal.Text;
+            dataGridViewAdmin.Rows[b].Cells[1].Value = txtDescripcion.Text;
+            dataGridViewAdmin.Rows[b].Cells[2].Value = textBox1.Text;
         }
 
         private void Form3_Load(object sender, EventArgs e)
